@@ -22,14 +22,24 @@
         <!-- Text Area -->
     	<div class="ml-container">
     		<form action="{{ url_for('predict') }}" method="POST">
-                <input class="form-input" type="text" name="Location" placeholder="Location (eg. 1st Phase JP Nagar)"><br>
+                <input class="form-input" type="text" name="Location" list="Localities" placeholder="Location (eg. 1st Phase JP Nagar)">
+                    <datalist id = "Localities">
+                        {% for local in localities  %}
+                        <option value = {{ local }}>
+                        {% endfor %}
+                    </datalist><br>
                 <input class="form-input" type="text" name="BHK" placeholder="BHK eg. 2"><br>
                 <input class="form-input" type="text" name="Bathroom" placeholder="Bathroom eg. 3"><br>
                 <input class="form-input" type="text" name="Balcony" placeholder="Balcony eg. 2"><br>
                 <input class="form-input" type="text" name="Square Fit" placeholder="Square Fit eg. 2000"><br>
-                <input class="form-input" type="text" name="Area Type" placeholder="Area Type eg. Plot Area"><br>
+                <input class="form-input" type="text" name="Area Type" list="Area_types" placeholder="Area Type eg. Plot Area">
+                    <datalist id = 'Area_types'>
+                        <option value="Ready To Move">
+                        <option value="Built-up  Area">
+                        <option value="Carpet  Area">
+                        <option value="Plot  Area"></option>
+                        </datalist><br>
                 <input class="form-input" type="text" name="Availability" placeholder="Availability eg. Not Ready"><br>
-
         		<input type="submit" class="my-cta-button" value="Predict">
         	</form>
     	</div>

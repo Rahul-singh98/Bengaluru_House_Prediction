@@ -250,11 +250,12 @@ def prediction(location, bhk, bath, balcony, sqft, area_type, availability):
         
     return model.predict([x])[0]
 
-
-
-# Prediction 1
+# Predictions 
+print('=======> Predictions ')
 # Input in the form : Location, BHK, Bath, Balcony, Sqft, area_type, availability.
-print(prediction('1st Block Jayanagar', 2, 2, 2, 1000, 'Built-up  Area', 'Ready To Move'))
+print(f"Build-up Prediction : {prediction('1st Block Jayanagar', 2, 2, 2, 1000, 'Built-up  Area', 'Ready To Move')}")
+print(f"Carpet Area Prediction : {prediction('1st Block Jayanagar', 2, 2, 2, 1000, 'Carpet  Area', 'Ready To Move')}")
+print(f"Plot Area Prediction : {prediction('1st Block Jayanagar', 2, 2, 2, 1000, 'Plot  Area', 'Ready To Move')}")
 
 # filename = 'Bengluru_house_prediction.pkl'
-# pickle.dump(model ,open(filename , 'wb'))
+pickle.dump(model ,open(filename , 'wb'))
