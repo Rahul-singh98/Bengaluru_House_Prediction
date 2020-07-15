@@ -4,6 +4,8 @@
 ![Build Status](https://camo.githubusercontent.com/60760f2c9636f7ef252443679ae73a0426780dfc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6962726172792d736b6c6561726e2d6f72616e67652e737667)](https://github.com/Rahul-singh98/Machine-Learning-Projects) 
 
 ## Description :
-This repository consists of machine learning projects .
+This repository consists of machine learning projects and deployed on Heroku.
+App ["link"](https://frozen-refuge-01507.herokuapp.com/)
 
-*LinkedIn* : ['Rahul Singh'](https://www.linkedin.com/in/rahul-singh-432555194/)
+*About Me* : ['LinkedIn'](https://www.linkedin.com/in/rahul-singh-432555194/)
+             ['Instagram'](https://www.instagram.com/karan_8510)
