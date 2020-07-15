@@ -1,8 +1,9 @@
 # Importing essential libraries
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request , Markup
 import pandas as pd
 import pickle
 import numpy as np
+from math import floor
 
 # Load the model
 H_filename = 'House_Price_Prediction_Bengluru/Bengluru_house_prediction.pkl'
@@ -42,7 +43,7 @@ def prediction(location, bhk, bath, balcony, sqft, area_type, availability):
 
 @app.route('/')
 def home():
-    locality = ["1st_Block_Jayanagar" , "1st_Phase_JP_Nagar" ,"2nd Phase Judicial Layout" , "2nd Stage Nagarbhavi" , "5th Block Hbr Layout" , "5th Phase JP Nagar",
+    locality = ('1st Block Jayanagar' , '1st Phase JP Nagar' ,"2nd Phase Judicial Layout" , "2nd Stage Nagarbhavi" , "5th Block Hbr Layout" , "5th Phase JP Nagar",
                 "6th Phase JP Nagar","7th Phase JP Nagar","8th Phase JP Nagar","9th Phase JP Nagar","AECS Layout","Abbigere","Akshaya Nagar","Ambalipura",
                 "Ambedkar Nagar","Amruthahalli","Anandapura","Ananth Nagar","Anekal","Anjanapura","Ardendale","Arekere","Attibele","BEML Layout","BTM 2nd Stage",
                 "BTM Layout","Babusapalaya","Badavala Nagar","Balagere","Banashankari","Banashankari Stage II","Banashankari Stage III","Banashankari Stage V",
@@ -68,9 +69,11 @@ def home():
                 "Sarjapur  Road","Sarjapura - Attibele Road","Sector 2 HSR Layout","Sector 7 HSR Layout","Seegehalli","Shampura","Shivaji Nagar","Singasandra",
                 "Somasundara Palya","Sompura","Sonnenahalli","Subramanyapura","Sultan Palaya","TC Palaya","Talaghattapura","Thanisandra","Thigalarapalya","Thubarahalli",
                 "Tindlu","Tumkur Road","Ulsoor","Uttarahalli","Varthur","Varthur Road","Vasanthapura","Vidyaranyapura","Vijayanagar","Vishveshwarya Layout",
-                "Vishwapriya Layout","Vittasandra","Whitefield","Yelachenahalli","Yelahanka","Yelahanka New Town","Yelenahalli","Yeshwanthpur" ]
-
-    return render_template('index.html' , localities = locality)
+                "Vishwapriya Layout","Vittasandra","Whitefield","Yelachenahalli","Yelahanka","Yelahanka New Town","Yelenahalli","Yeshwanthpur" )
+    
+    _area_type = ['Built-up  Area' , "Carpet  Area" ,"Plot  Area"]
+    _avail = ['Ready To Move' ,"Not Ready"]
+    return render_template('index.html' , localities =locality , area_type = _area_type , avail = _avail) 
 
 
 @app.route('/House_predict', methods=['POST'])
@@ -86,7 +89,7 @@ def predict():
         
         my_prediction = prediction(loc, bhk, bath, balc, sqft, a_type, avail)
         
-        return render_template('result.html', prediction = my_prediction * sqft)
+        return render_template('result.html', prediction = floor(my_prediction) * sqft)
 
 if __name__ == '__main__':
 	app.run(debug=True)

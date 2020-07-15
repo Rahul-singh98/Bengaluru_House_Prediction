@@ -1,45 +1,45 @@
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
         <title>Bengluru House Prediction</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='my_favicon.ico') }}">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
         <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     </head>
 
     <body>
-
         <!-- Website Title -->
     	<div class="container">
             <h2 class='container-heading'><span class="heading_font">Bengluru House Prediction</span></h2>
-            <div class='description'>
-    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
-    		</div>
     	</div>
 
         <!-- Text Area -->
     	<div class="ml-container">
     		<form action="{{ url_for('predict') }}" method="POST">
-                <input class="form-input" type="text" name="Location" list="Localities" placeholder="Location (eg. 1st Phase JP Nagar)">
+                <input class="form-input-1" type="text" name="Location" list="Localities" placeholder="Location (eg. 1st Phase JP Nagar)">
                     <datalist id = "Localities">
-                        {% for local in localities  %}
-                        <option value = {{ local }}>
+                        {% for local in localities %}
+                        <option value = "{{local}}" >{{local}} </option>
                         {% endfor %}
                     </datalist><br>
-                <input class="form-input" type="text" name="BHK" placeholder="BHK eg. 2"><br>
-                <input class="form-input" type="text" name="Bathroom" placeholder="Bathroom eg. 3"><br>
-                <input class="form-input" type="text" name="Balcony" placeholder="Balcony eg. 2"><br>
-                <input class="form-input" type="text" name="Square Fit" placeholder="Square Fit eg. 2000"><br>
-                <input class="form-input" type="text" name="Area Type" list="Area_types" placeholder="Area Type eg. Plot Area">
+                <input class="form-input-2" type="text" name="BHK" placeholder="BHK eg. 2"><br>
+                <input class="form-input-3" type="text" name="Bathroom" placeholder="Bathroom eg. 3"><br>
+                <input class="form-input-4" type="text" name="Balcony" placeholder="Balcony eg. 2"><br>
+                <input class="form-input-5" type="text" name="Square Fit" placeholder="Square Fit eg. 2000"><br>
+                <input class="form-input-6" type="text" name="Area Type" list="Area_types" placeholder="Area Type eg. Plot Area">
                     <datalist id = 'Area_types'>
-                        <option value="Ready To Move">
-                        <option value="Built-up  Area">
-                        <option value="Carpet  Area">
-                        <option value="Plot  Area"></option>
+                        {% for a_type in area_type %}
+                        <option value="{{a_type}}">{{a_type}} </option>
+                        {% endfor %}
                         </datalist><br>
-                <input class="form-input" type="text" name="Availability" placeholder="Availability eg. Not Ready"><br>
+                <input class="form-input-7" type="text" name="Availability" list='Avail' placeholder="Availability eg. Not Ready"><br>
+                <datalist id="Avail">
+                        {% for av in avail %}
+                        <option value="{{av}}">{{av}}</option>
+                        {% endfor %}
+                </datalist>
         		<input type="submit" class="my-cta-button" value="Predict">
         	</form>
     	</div>
@@ -48,10 +48,9 @@
        <div class='footer'>
            <div class="contact">
                <a target="_blank" href="https://github.com/Rahul-singh98/Machine-Learning-Projects"><i class="fab fa-github fa-lg contact-icon"></i></a>
-               <a target="_blank" href="https://github.com/Rahul-singh98/Machine-Learning-Projects"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/rahul-singh-432555194"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
            </div>
-           <p class='footer-description'>Inspired by Anuj Vyas</p>
+           <p class='footer-description'>Made with ❤️ by Rahul Singh.</p>
        </div>
-
     </body>
 </html>
