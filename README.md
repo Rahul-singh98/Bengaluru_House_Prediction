@@ -12,5 +12,5 @@ This repository consists of machine learning projects with flask and deployed on
 !["Watch this video"](readme_resources/house_prediction.gif)
 
 ## About Me :
-['LinkedIn'](https://www.linkedin.com/in/rahul-singh-432555194) \ 
+['LinkedIn'](https://www.linkedin.com/in/rahul-singh-432555194) '\n'
 ['Instagram'](https://www.instagram.com/karan_8510)
