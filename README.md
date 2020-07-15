@@ -7,5 +7,8 @@
 This repository consists of machine learning projects and deployed on Heroku.
 App ["link"](https://frozen-refuge-01507.herokuapp.com/)
 
+
+[!["Watch this video"](readme_resources/house_prediction.gif)]
+
 *About Me* : ['LinkedIn'](https://www.linkedin.com/in/rahul-singh-432555194/)
              ['Instagram'](https://www.instagram.com/karan_8510)
