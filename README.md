@@ -1,7 +1,7 @@
 # Machine-Learning-Projects
-[![Build Status](https://img.shields.io/badge/<Datasets>-<Kaggle>-<blue>)
-![Build Status](https://img.shields.io/badge/<Python>-<3.6>-<brightgreen>)
-![Build Status](https://img.shields.io/badge/<Library>-<sklearn>-<orange>) 
+![Build Status](https://img.shields.io/static/v1?label=Datasets&message=Kaggle&color=blue)
+![Build Status](https://img.shields.io/static/v1?label=Python&message=3.6&color=brightgreen)
+![Build Status](https://img.shields.io/static/v1?label=Library&message=sklearn&color=orange) 
 ![Issue Status](https://img.shields.io/github/issues/Rahul-singh98/Machine-Learning-Projects)
 ![Forks Status](https://img.shields.io/github/forks/Rahul-singh98/Machine-Learning-Projects)
 ![Stats Status](https://img.shields.io/github/stars/Rahul-singh98/Machine-Learning-Projects)
