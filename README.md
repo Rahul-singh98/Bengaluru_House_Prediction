@@ -29,5 +29,4 @@ Model contains several parameters:
 ## About Me :
 [LinkedIn](https://www.linkedin.com/in/rahul-singh-432555194) \
 [Instagram](https://www.instagram.com/karan_8510)
-<img height=5  width=5 src='./readme_resources/instagram.png'>
-<a href="https://www.linkedin.com/in/rahul-singh-432555194"><i class="fab fa-instagram"></i></a>
+<img height=20  width=20 src='./readme_resources/instagram.png' href='(https://www.instagram.com/karan_8510'>
