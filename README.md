@@ -28,4 +28,4 @@ Model contains several parameters:
 
 ## About Me :
 [LinkedIn](https://www.linkedin.com/in/rahul-singh-432555194)
-[![Instagram]['./readme_resources/instagram.png']][https://www.instagram.com/karan_8510]
+[![Instagram](./readme_resources/instagram.png)](https://www.instagram.com/karan_8510)
