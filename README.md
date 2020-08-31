@@ -26,5 +26,13 @@ Model contains several parameters:
 ## Glimpse of Web App
 ![Watch this video](readme_resources/house_prediction.gif)
 
-## About Me :
-[![Linkedin](./readme_resources/linkedin.png)](https://www.linkedin.com/in/rahul-singh-432555194) [![Instagram](./readme_resources/instagram.png)](https://www.instagram.com/karan_8510)
+<hr>
+<p align="center">
+  <i>Connect With me.</i>
+
+  <p align="center">
+    <a href="https://www.linkedin.com/in/rahul-singh-432555194" alt="Linkedin"><img src="https://github.com/Rahul-singh98/Machine-Learning-Projects/blob/master/readme_resources/linkedin.png"></a>
+    <a href="mailto:rahulrajput98fun@gmail.com" alt="Contact me"><img src="https://github.com/Rahul-singh98/Machine-Learning-Projects/blob/master/readme_resources/mail.png"></a>
+    <a href="https://www.instagram.com/karan_8510" alt="Instagram"><img src="https://github.com/Rahul-singh98/Machine-Learning-Projects/blob/master/readme_resources/instagram.png"></a>
+  </p>
+</p>
