@@ -27,5 +27,4 @@ Model contains several parameters:
 ![Watch this video](readme_resources/house_prediction.gif)
 
 ## About Me :
-[![Linkedin](./readme_resources/linkedin.png)](https://www.linkedin.com/in/rahul-singh-432555194)   
-[![Instagram](./readme_resources/instagram.png)](https://www.instagram.com/karan_8510)
+[![Linkedin](./readme_resources/linkedin.png)](https://www.linkedin.com/in/rahul-singh-432555194) [![Instagram](./readme_resources/instagram.png)](https://www.instagram.com/karan_8510)
