@@ -1,4 +1,7 @@
 # Machine-Learning-Projects
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ce005b6457594cf39ebdb268519d279e)](https://app.codacy.com/manual/rajput.rahul8510/Bengaluru_House_Prediction?utm_source=github.com&utm_medium=referral&utm_content=Rahul-singh98/Bengaluru_House_Prediction&utm_campaign=Badge_Grade_Settings)
+
 ![Build Status](https://img.shields.io/static/v1?label=Datasets&message=Kaggle&color=blue)
 ![Build Status](https://img.shields.io/static/v1?label=Python&message=3.6&color=brightgreen)
 ![Build Status](https://img.shields.io/static/v1?label=Library&message=sklearn&color=orange) 
